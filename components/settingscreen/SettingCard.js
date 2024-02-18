@@ -3,7 +3,6 @@ import {
   View,
   StyleSheet,
 } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import {
   MaterialCommunityIcons,
 } from "@expo/vector-icons";
