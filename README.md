@@ -1,14 +1,22 @@
 # plumm - A Digital Banking App
 
-This repository provides a template/prototype for a digital banking app, inspired by apps like Chime and Cashapp. It's designed to be a starting point for developers working on similar projects and utilizes Expo and UI Kitten for the user interface.
+This repository provides a template/prototype for a digital banking app, inspired by apps like Chime and Cashapp. It's designed to be a starting point for developers working on similar projects with several screens and utilizes Expo and UI Kitten for the user interface.
+
+## Preview
+![A promo clip of the app.](promoclip.GIF)
+### Multiple Screens!!
+<img src="promo1.jpg" alt="A promo image of one of the app screens." height="400">
+<img src="promo2.jpg" alt="A promo image of one of the app screens." height="400">
+<img src="promo3.jpg" alt="A promo image of one of the app screens." height="400">
+<img src="promo4.jpg" alt="A promo image of one of the app screens." height="400">
+<img src="promo5.jpg" alt="A promo image of one of the app screens." height="400">
 
 ## Key Features:
-
+- Multiple screens implementing modern business logic.
 - Account balances and transaction history display
-- Money transfer functionality
-- Bill pay capabilities (placeholder)
+- Change app theme seamlessly with UI Kitten.
 - Modern and user-friendly UI built with UI Kitten
-- Expo for cross-platform development
+- Expo for quick cross-platform development
 
 ## Getting Started:
 
