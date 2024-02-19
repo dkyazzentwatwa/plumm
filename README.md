@@ -1,4 +1,4 @@
-# plumm - A Digital Banking App
+# plumm - A Digital Banking Template
 
 This repository provides a template/prototype for a digital banking app, inspired by apps like Chime and Cashapp. It's designed to be a starting point for developers working on similar projects with several screens and utilizes Expo and UI Kitten for the user interface.
 
