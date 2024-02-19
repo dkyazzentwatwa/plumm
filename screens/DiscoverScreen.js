@@ -2,7 +2,6 @@ import React, { useMemo, useRef, useState, useCallback } from "react";
 import { View, StyleSheet, Image, ScrollView } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Text, Layout, useTheme } from "@ui-kitten/components";
-import { StatusBar } from "expo-status-bar";
 import {
   BottomSheetModalProvider,
   BottomSheetModal,
@@ -148,10 +147,6 @@ const styles = StyleSheet.create({
   rowFlex: {
     flexDirection: "row",
     flexWrap: "wrap",
-  },
-  colFlex: {
-    flex: 1,
-    flexDirection: "column",
   },
   offerPic: {
     width: 390,

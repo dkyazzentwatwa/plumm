@@ -1,26 +1,20 @@
-import React, { useMemo } from "react";
+import React from "react";
 import {
   View,
   StyleSheet,
   Image,
-  ScrollView,
-  TouchableOpacity,
-  FlatList,
 } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import {
-  Card,
   Text,
-  Layout,
   useTheme,
-  Avatar,
-  Input,
-  Divider,
 } from "@ui-kitten/components";
 import { StatusBar } from "expo-status-bar";
 
 function TxListItem({ title, description, amount, color }) {
   const theme = useTheme();
+  //fix renderDescription
+  /*
   const renderDescription = () => {
     if (transaction.source === "direct deposit") {
       return <Text appearance="hint">{transaction.source}</Text>;
@@ -30,6 +24,7 @@ function TxListItem({ title, description, amount, color }) {
       return null; // Handle other sources or render nothing
     }
   };
+  */
   return (
     <View style={{ alignItems: "flex-start" }}>
       <View style={[styles.rowFlex, { alignItems: "center" }]}>

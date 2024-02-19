@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { View, StyleSheet, Image, ScrollView, TouchableOpacity, FlatList } from "react-native";
 import {
   MaterialCommunityIcons,
@@ -6,24 +6,8 @@ import {
 import {
   Card,
   Text,
-  Layout,
   useTheme,
-  Avatar,
-  Input
 } from "@ui-kitten/components";
-import { StatusBar } from "expo-status-bar";
-import {
-  BottomSheetModalProvider,
-  BottomSheetModal,
-  BottomSheetBackdrop,
-} from "@gorhom/bottom-sheet";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-  SafeAreaView,
-} from "react-native-safe-area-context";
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 function OfferCard({ iconName, title, description }) {
   const theme = useTheme();
@@ -64,11 +48,3 @@ const styles = StyleSheet.create({
   },
 })
 export default OfferCard
-
-/*
-<InfoCard
-  iconName="hamburger"
-  title="McDonalds"
-  description="5% off each order"
-/>
-*/

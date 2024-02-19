@@ -1,7 +1,6 @@
 import React, { useRef, useMemo, useCallback } from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 import { Text, Layout, useTheme } from "@ui-kitten/components";
-import { StatusBar } from "expo-status-bar";
 import {
   BottomSheetModalProvider,
   BottomSheetModal,
@@ -85,19 +84,19 @@ function HomeScreen({ navigation }) {
               />
               <MoneyCard
                 title="Crypto"
-                amount="7326.92"
+                amount="7,326.92"
                 goalAmount="1497.92"
                 icon="bitcoin"
               />
               <MoneyCard
                 title="Paychecks"
-                amount="2345.22"
+                amount="2,345.22"
                 goalAmount="1497.92"
                 icon="cash-multiple"
               />
               <MoneyCard
                 title="Stocks"
-                amount="9812.42"
+                amount="9,812.42"
                 goalAmount="1497.92"
                 icon="chart-line"
               />
@@ -214,7 +213,6 @@ const styles = StyleSheet.create({
     flexDirection: "column",
   },
   hintText: {
-    marginLeft: 5,
     marginTop: 5,
   },
 });

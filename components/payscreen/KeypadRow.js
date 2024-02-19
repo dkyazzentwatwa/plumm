@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
 export default KeypadRow
 
 /*
+usage example:
 const rows = [
   [1, 2, 3],
   [4, 5, 6],
@@ -82,14 +83,10 @@ return (
       />
     ))}
 );
-*/
 
-/*
 This component takes the following props:
  * rowData: An array of numbers or special characters representing the buttons in the row (e.g., [1, 2, 3]).
  * onPressNumber: A function to call when a number button is pressed.
  * onPressDot: A function to call when the dot button is pressed.
  * onPressClear: A function to call when the clear button is pressed.
-
-Remember to replace styles.rowFlex and the function calls with your actual styles and logic.
 */

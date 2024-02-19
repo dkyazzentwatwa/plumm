@@ -1,7 +1,6 @@
 import React, { useMemo, useRef, useCallback } from "react";
 import { StyleSheet, Image, ScrollView, View } from "react-native";
 import { Text, Layout, useTheme } from "@ui-kitten/components";
-import { StatusBar } from "expo-status-bar";
 import {
   BottomSheetModalProvider,
   BottomSheetModal,
@@ -146,7 +145,6 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   hintText: {
-    marginLeft: 5,
     marginTop: 5,
   },
   cardPic: {

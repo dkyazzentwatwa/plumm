@@ -23,7 +23,7 @@ function MoneyCard({ title, amount, goalAmount, icon }) {
   const theme = useTheme();
   return (
   
-    <Card style={[styles.moneyBox]}>
+    <Card  style={[styles.moneyBox]}>
       <Text category="h6" style={[styles.moneyText, { marginTop: 5 }]}>
         {title}
       </Text>
@@ -33,44 +33,16 @@ function MoneyCard({ title, amount, goalAmount, icon }) {
         color={theme["color-primary-500"]}
         style={[{ marginTop: 5 }]}
       />
-      <Text category="h4" style={{ marginTop: 20 }}>
+      <Text category="h5" style={{ marginTop: 15 }}>
         ${amount}
       </Text>
-      <Text appearance="hint" category="c1" style={{ marginTop: 5 }}>
+      <Text appearance="hint" category="c1" style={{ marginTop: 10 }}>
         ${goalAmount} for goal.
       </Text>
     </Card>
   );
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 15,
-  },
-  rowFlex: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-  },
-  colFlex: {
-    flex: 1,
-    flexDirection: "column",
-  },
-  taskText: {
-    fontFamily: "System",
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: 10,
-    fontFamily: "System",
-  },
-
-  dataBox: {
-    borderRadius: 30,
-    marginBottom: 10,
-    marginRight: 10,
-    marginTop: 20,
-    width: 120,
-    height: 120,
-  },
   moneyBox: {
     borderRadius: 30,
     marginBottom: 10,
@@ -86,30 +58,6 @@ const styles = StyleSheet.create({
     fontFamily: "System",
   },
 
-  hintText: {
-    marginLeft: 5,
-    marginTop: 5,
-  },
-  balanceBox: {
-    width: "100%",
-    height: 190,
-    borderRadius: 20,
-    marginTop: 30,
-  },
-  cashButton: {
-    borderRadius: 30,
-    width: 120,
-    height: 50,
-    marginBottom: 15,
-    marginRight: 10,
-    marginLeft: 10,
-  },
-  listCard: {
-    marginTop: 15,
-  },
-  avatar: {
-    height: 70,
-  },
 });
 
 export default MoneyCard

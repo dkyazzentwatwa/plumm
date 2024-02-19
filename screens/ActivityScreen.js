@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState, useCallback } from "react";
+import React, { useMemo, useRef, useCallback } from "react";
 import { View, StyleSheet, ScrollView } from "react-native";
 import { Card, Text, Layout, useTheme } from "@ui-kitten/components";
 import {
@@ -14,7 +14,6 @@ import SettingScreen from "./settingScreen";
 import AppHeader from "../components/AppHeader";
 import SearchInput from "../components/SearchInput";
 import UserScroller from "../components/UserScroller";
-import TxList from "../components/activityscreen/TxCard";
 import TxListItem from "../components/activityscreen/TxListItem";
 
 const usersData = [
@@ -180,7 +179,6 @@ function ActivityScreen({ navigation }) {
   );
 
   const [status, setStatus] = React.useState("Off");
-  const [checked, setChecked] = React.useState(false);
   const onCheckedChange = (isChecked) => {
     setChecked(isChecked);
     if (isChecked == true) {

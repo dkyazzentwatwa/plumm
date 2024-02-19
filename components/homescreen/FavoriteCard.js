@@ -14,7 +14,7 @@ import {
 function FavoriteCard({ onPress, name, text }) {
   const theme = useTheme();
   return (
-    <Card onPress={onPress} style={[styles.dataBox, { justifyContent: "center", alignItems: "center" }]}>
+    <Card onPress={onPress} style={[styles.dataBox, { justifyContent: "center"}]}>
       <MaterialCommunityIcons name={name} size={50} color={theme["color-primary-500"]} style={[{ textAlign: "center" }]} />
       <Text category="label" style={[styles.taskText, { marginTop: 10 }]}>
         {text}
@@ -23,18 +23,6 @@ function FavoriteCard({ onPress, name, text }) {
   );
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 15,
-  },
-  rowFlex: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-  },
-  colFlex: {
-    flex: 1,
-    flexDirection: "column",
-  },
   taskText: {
     fontFamily: "System",
     textAlign: "center",

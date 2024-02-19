@@ -118,7 +118,6 @@ setAmount(parseFloat(currentAmountString));
         <Layout style={[styles.container]}>
 
           <AppHeader title="Pay" avatarSource={require("../assets/user.png")} onPress={() => settingSheetModal()} />
-
           <ScrollView
             showsVerticalScrollIndicator={false}
             showsHorizontalScrollIndicator={false}

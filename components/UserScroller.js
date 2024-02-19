@@ -1,33 +1,12 @@
-import React, { useMemo } from "react";
-import { View, StyleSheet, Image, ScrollView, TouchableOpacity, FlatList } from "react-native";
+import React from "react";
+import { View, StyleSheet, Image, TouchableOpacity, FlatList } from "react-native";
 import {
-  MaterialCommunityIcons,
-} from "@expo/vector-icons";
-import {
-  Card,
   Text,
-  Layout,
   useTheme,
-  Avatar,
-  Input
 } from "@ui-kitten/components";
-import { StatusBar } from "expo-status-bar";
-import {
-  BottomSheetModalProvider,
-  BottomSheetModal,
-  BottomSheetBackdrop,
-} from "@gorhom/bottom-sheet";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-  SafeAreaView,
-} from "react-native-safe-area-context";
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
 //Here's a functional component optimizing the ScrollView for larger amounts of users:
 function UserScroller({ users }) {
-  const theme = useTheme();
   const renderItem = ({ item }) => (
     <TouchableOpacity>
     <View key={item.id}>

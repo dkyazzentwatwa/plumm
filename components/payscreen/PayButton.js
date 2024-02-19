@@ -16,9 +16,18 @@ const styles = StyleSheet.create({
     width: 120,
     height: 50,
   },
-
 });
 
 export default PayButton
 
-// <RequestButton onPress={() => handleRequestPress()} title="Request"/>
+/*
+describe('PayButton', () => {
+  it('renders the button with the correct title', () => {
+    const mockOnPress = jest.fn();
+    const title = 'Pay Now';
+    const wrapper = shallow(<PayButton onPress={mockOnPress} title={title} />);
+    expect(wrapper.find('Button').prop('onPress')).toEqual(mockOnPress);
+    expect(wrapper.find('Button').prop('children')).toEqual(title);
+  });
+});
+*/
