@@ -12,9 +12,9 @@ import {
 function BalanceCard({ title, amount, onAddCash, onCashOut }) {
   return (
     <Card style={[styles.balanceBox]}>
-      <View style={[styles.rowFlex, { alignItems: "center" }]}>
+      <View style={[styles.rowFlex, { alignItems: "center", justifyContent: "space-between" }]}>
         <Text category="h6">{title}</Text>
-        <Text appearance="hint" category="s2" style={{ alignItems: "flex-end", marginLeft: 100 }}>
+        <Text appearance="hint" category="s2" style={{ alignItems: "flex-end"}}>
           Account & Routing
         </Text>
       </View>
@@ -49,11 +49,10 @@ const styles = StyleSheet.create({
   },
   cashButton: {
     borderRadius: 30,
-    width: 120,
+    width: 110,
     height: 50,
     marginBottom: 15,
     marginRight: 10,
-    marginLeft: 10,
   },
 });
 

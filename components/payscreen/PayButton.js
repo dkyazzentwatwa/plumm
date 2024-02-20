@@ -13,7 +13,7 @@ function PayButton({ onPress, title }) {
 const styles = StyleSheet.create({
   payButton: {
     borderRadius: 30,
-    width: 120,
+    width: 130,
     height: 50,
   },
 });

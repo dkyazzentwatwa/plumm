@@ -68,7 +68,7 @@ function DiscoverScreen({ navigation }) {
             <SearchInput placeholder="Search People or Businesses" />
             <UserScroller users={usersData} />
             <View style={{ marginTop: 40 }}>
-              <View style={[styles.rowFlex]}>
+              <View style={[styles.rowFlex, {justifyContent: "space-between", alignItems: "center", marginBottom:10}]}>
                 <Text category="h5" style={{ alignItems: "flex-start" }}>
                   Instant Savings
                 </Text>
@@ -76,7 +76,6 @@ function DiscoverScreen({ navigation }) {
                   name="arrow-right-circle"
                   size={24}
                   color={theme["color-primary-500"]}
-                  style={{ alignItems: "flex-end", marginLeft: 200 }}
                 />
               </View>
               <OfferCard

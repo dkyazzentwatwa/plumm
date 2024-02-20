@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
   },
   payButton: {
     borderRadius: 30,
-    width: 180,
+    width: 130,
     height: 50,
   },
 
